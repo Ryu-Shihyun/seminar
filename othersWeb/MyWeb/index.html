@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="window">
+      <div class="header">
+        <div class="name">倉内ひかり</div>
+      </div>
+      <div class="wrapper">
+        <div class="me">名前：倉内ひかり</div>
+        <div class="school">学校：東京外国語大学</div>
+        <div class="hobby">趣味：バックパック旅行、筋トレ、ラテン音楽</div>
+        <div class="display">
+          <div id="buttonDisplay"></div>
+          <button id="button-finish">今日の気分は？</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const buttonF = document.getElementById("button-finish")
+      const buttonDisplay = document.getElementById("buttonDisplay")
+
+      let count = 0
+
+      const countUp = function() {
+        // count を更新
+        count += 1
+        if (count > 3) {
+          count = 0
+        }
+        // count を秒単位にして表示
+        if (count == 0) {
+          buttonDisplay.innerHTML = "<img src ='./good.jpg'>"
+        }
+        if (count == 1) {
+          buttonDisplay.innerHTML = "<img src ='./mad.jpg'>"
+        }
+        if (count == 2) {
+          buttonDisplay.innerHTML = "<img src ='./reports.jpg'>"
+        }
+        if (count == 3) {
+          buttonDisplay.innerHTML = "<img src ='./happy.jpg'>"
+        }
+        console.log(count)
+      }
+      let id = null
+
+      buttonF.onclick = function() {
+        if (id === null) {
+          // start
+          id = setInterval(countUp, 100)
+          buttonF.textContent = "これだ！"
+        } else {
+          // stop
+          clearInterval(id)
+          id = null
+          buttonF.textContent = "今日の気分は？"
+        }
+      }
+    </script>
+  </body>
+</html>
