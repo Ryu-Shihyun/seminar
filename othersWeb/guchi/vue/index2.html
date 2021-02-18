@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vue自販機</title>
+  </head>
+  <body>
+    <h1>
+      ～ハッピー度数が9で100円増える～
+    </h1>
+    <div id="app">
+      <div id="moneyDisplay">{{money}}</div>
+      <div id="randomdisplay">あなたのハッピー度数は{{random}}</div>
+      <input type="text" v-model="inputMoney" />
+      <button v-on:click="addMoney">お金を入れる</button>
+      <button v-on:click="buyCola">コーラ</button>
+      <div v-for="item in items">{{item}}</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+      const app = new Vue({
+        el: "#app",
+        data: {
+          money: 0,
+          inputMoney: 0,
+          items: [],
+          random: "",
+        },
+        methods: {
+          addMoney: function() {
+            this.money += Number(this.inputMoney)
+          },
+          buyCola: function() {
+            if (this.money >= 100) {
+              // お金が減るようにして!!!
+              this.items.push("coke")
+              this.money = this.money - 100
+              let i = 10 * Math.random()
+              this.random = Math.floor(i)
+              if (Math.floor(i) === 9) {
+                this.money += 100
+              }
+            }
+          },
+        },
+      })
+    </script>
+  </body>
+</html>
