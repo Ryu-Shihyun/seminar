@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav {
+  background-color: #000;
+  position: fixed; /*固定*/
+  height: 60px;
+  width: 100%;
+
+  display: flex; /*子要素を横並びに*/
+  flex-direction: row; /*向きを左から右*/
+  justify-content: flex-end; /*揃え位置を右揃え*/
+  align-items: center; /*軸中央*/
+}
+
+nav {
+  /*間隔を開ける*/
+  margin-right: 5%;
+}
+
+a {
+  /**/
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  /*マウスを乗せると赤くなる*/
+  color: #f00;
+}
+
+/*FirstBlock*/
+#first-block {
+  background-image: url("./photo/TAK_4100.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: serif;
+  color: white;
+  text-shadow: 0 5px 5px black;
+}
+
+h3 {
+  font-size: 50px;
+  font-family: serif;
+  color: white;
+  text-shadow: 0 5px 5px black;
+}
+/*   First block End   */
+/*Second block*/
+#second-block {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info-title {
+  font-size: 60px;
+  font-family: serif;
+  margin-bottom: 20px;
+  color: #444;
+  text-align: center;
+}
+
+.info-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #444;
+
+  width: 30%;
+}
+
+.font-small {
+  font-size: 15px;
+}
+/*   Second block End   */
+/*Third block Start*/
+#third-block {
+  background-color: lightblue;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.event-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.events-title {
+  font-size: 60px;
+  font-family: serif;
+  color: #444;
+}
+
+.event {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.event-name {
+  font-size: 20px;
+  padding: 10px;
+  width: 40%;
+}
+
+.event-name-span {
+  font-size: 40px;
+  font-family: serif;
+}
+
+.Photo00 {
+  background-image: url(./shinjuku/00.JPG);
+  background-size: cover;
+  background-position: 60% 50%;
+  width: 450px;
+  height: 330px;
+}
+.Photo01 {
+  background-image: url(./shinjuku/01.JPG);
+  background-size: cover;
+  background-position: 60% 50%;
+  width: 450px;
+  height: 330px;
+}
+.Photo02 {
+  background-image: url(./shinjuku/02.JPG);
+  background-size: cover;
+  background-position: 60% 50%;
+  width: 450px;
+  height: 330px;
+}
+.Photo03 {
+  background-image: url(./shinjuku/03.JPG);
+  background-size: cover;
+  background-position: 60% 50%;
+  width: 450px;
+  height: 330px;
+}
+.Photo04 {
+  background-image: url(./shinjuku/04.JPG);
+  background-size: cover;
+  background-position: 60% 50%;
+  width: 450px;
+  height: 330px;
+}
+
+.sunobo00 {
+  background-image: url(./sunobo/00.JPG);
+  background-size: cover;
+  background-position: 60% 50%;
+  width: 450px;
+  height: 330px;
+}
+.sunobo01 {
+  background-image: url(./sunobo/01.JPG);
+  background-size: cover;
+  background-position: 60% 50%;
+  width: 450px;
+  height: 330px;
+}
+.sunobo02 {
+  background-image: url(./sunobo/02.JPG);
+  background-size: cover;
+  background-position: 60% 50%;
+  width: 450px;
+  height: 330px;
+}
+.sunobo03 {
+  background-image: url(./sunobo/03.JPG);
+  background-size: cover;
+  background-position: 60% 50%;
+  width: 450px;
+  height: 330px;
+}
+.sunobo04 {
+  background-image: url(./sunobo/04.JPG);
+  background-size: cover;
+  background-position: 20% 50%;
+  width: 450px;
+  height: 330px;
+}
+/*Third block End*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 50px;
+  background-color: #000;
+  font-size: 15px;
+  color: #fff;
+}
