@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <title>takaのホームページ</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+ </head>
+
+ <body>
+  <header class="header-nav">
+
+    <div class="h-menu">
+      <input id="h-menu_checkbox" class="h-menuCheckbox" type="checkbox">
+      <label class="h-menu_icon" for="h-menu_checkbox"><span class="hamburger-icon"></span></label>
+      <label id="h-menu_black" class="h-menuCheckbox" for="h-menu_checkbox"></label>
+      <div id="h-menu_content">
+        <ul>
+          <li><a href="#">Top</a></li>
+          <li><a href="#link_About">About</a></li>
+          <li><a href="#link_Skill">Skill</a></li>
+          <li><a href="#link_Works">Works</a></li>
+          <li><a href="#link_Contact">Contact</a></li>
+      </div>
+     </div>
+  </header>
+
+  <section class="first-block">
+      <h1>荒木 貴郎</h1>
+  </section>
+
+  <section class="second-block">
+    <h2 id="link_About">About</h2>
+    <ul>
+      <li class="About_container1">
+        <div class="self">
+          <img src="images/self.png" alt="顔写真" class="self">
+        </div>
+        <div class="About_text1">
+          <p> &nbsp;千葉県在住で大学を休学中の２１歳。<br><br>
+            &nbsp;普段はスポーツジムでアルバイトをし、２０人近くのお客様の前でスタジオレッスンのインストラクターとしても活動中。現在はパーソナルトレーナーの資格を取ることを視野に入れ、フィットネスの勉強も行う。<br><br>
+            &nbsp;手に職をつけ、将来的にフリーランスとして活動するために現在プログラミングの学習中。そのほか、中国人の両親を持つバックグラウンドから語学学習にも取り組む。<br> &nbsp; （資格：中国語検定３級、TOEIC８３０点、mossa認定groupfightインストラクター）<br><br>
+            &nbsp;千葉県立東葛飾高等学校→千葉大学法政経学部在学中。出身は新潟県。趣味は旅行、スポーツ（球技歴：野球６年 サッカー３年 水球３年）、筋トレ、YouTube鑑賞。
+          </p>
+      </li>
+     <div class="About_detail">
+       
+       <li class="About_container2">
+         <div class="fight">
+           <img src="images/fight.jpg" alt="fight" class="fight">
+          </div>
+          <div class="About_text2">
+            <p>スタジオレッスンの練習をしている時の写真。<br>
+             ２０２０年７月からインストラクターとしての活動を始め、<br>
+             お客様に最高の価値提供ができるよう日々奮闘中。
+            </p>
+          </div>
+        </li>
+        
+        <li class="About_container3">
+          <div class="hike">
+            <img src="images/ヒッチハイク.jpg" alt="ヒッチハイク" class="hike">
+          </div>
+          <div class="About_text3">
+            <p>友達とヒッチハイクをした時の写真。<br>
+              東京から静岡最南端の下田まで移動。<br>
+              新しい体験をすることが好きであり、<br>
+              常に刺激的な体験を求める。
+
+            </p>
+          </div>
+        </li>
+      </div>   
+      </ul>
+  </section>
+
+  <section class="third-block">
+    <h2 id="link_Skill">Skill</h2>
+    <p>comingsoon...</p>
+  </section>
+
+
+
+  <section class="fourth-block">
+    <h2 id="link_Works">Works</h2>
+   <ul class="info">
+     <li class="texts">
+       <h3>ComingSoon</h3>
+       <div class="text1">
+        ComingSoon
+       </div>
+     </li>
+     <li class="texts">
+       <h3>ComingSoon</h3>
+       <div class="text2">
+        ComingSoon
+       </div>
+     </li>
+     <li class="texts">
+       <h3>ComingSoon</h3>
+       <div class="text3">
+        ComingSoon
+       </div>
+      </li>
+     <li class="texts">
+       <h3>ComingSoon</h3>
+      <div class="text4">
+        ComingSoon
+      </div>
+      </li>
+   </ul>
+  </section>
+
+  
+  <section class="Form">
+    <h2 id="link_Contact">Contact</h2>
+    <div class="Form-Item">
+      <p class="Form-Item-Label">
+        <span class="Form-Item-Label-Required">必須</span>会社名
+      </p>
+      <input type="text" class="Form-Item-Input" placeholder="例）株式会社令和">
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+      <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+      <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+      <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+      <textarea class="Form-Item-Textarea"></textarea>
+    </div>
+    <input type="submit" class="Form-Btn" value="送信する">
+  </section>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
+<div id="page_top"><a href="#"></a></div>
+
+   <footer>
+    <span>Copyright © taka All Rights Reserved.</span>
+   </footer>
+   <script  src="/main.js"></script>
+
+
+
+</body>
+</html>
