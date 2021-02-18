@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <div id="app">
+      <div><button v-on:click="countUp">追加</button></div>
+      <div><input type="text" v-model="todo" /></div>
+      <div v-for="todo in todos">
+        <input type="checkbox" v-model="todo.isChecked" />
+        <span v-if="todo.isChecked" class="red">{{todo.title}}</span>
+        <span v-else>{{todo.title}}</span>
+      </div>
+    </div>
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          todo: "",
+          todos: [],
+        },
+        methods: {
+          countUp: function () {
+            this.todos.push({
+              title: this.todo,
+              isChecked: false,
+            });
+            this.todo = "";
+          },
+        },
+      });
+    </script>
+    <style>
+      .red {
+        color: red;
+      }
+    </style>
+  </body>
+</html>
