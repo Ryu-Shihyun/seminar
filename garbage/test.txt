@@ -2,3 +2,4 @@ this is test.
 It is difficult to learn about GitHub.
 It is very hard.
 I don't like GitHub.
+mojimoji \= _ =/
